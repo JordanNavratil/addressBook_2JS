@@ -23,6 +23,7 @@
             <input type="text" class="form-control" id="new-last-name">
           </div>
 
+          <h2>Home Address</h2>
           <div id="new-addresses">
             <div class="new-address">
 
@@ -41,9 +42,27 @@
             </div>
           </div>
 
-          <span class="btn btn-primary" id="add-address">Another address</span>
+          <h2>Business Address</h2>
+          <div id="new-business-addresses">
+            <div class="new-business-address">
 
-          <button type="submit" class="btn">Add</button>
+              <div class="form-group">
+                <label for="new-business-street">Street</label>
+                <input type="text" class="form-control new-business-street">
+              </div>
+              <div class="form-group">
+                <label for="new-business-city">City</label>
+                <input type="text" class="form-control new-business-city">
+              </div>
+              <div class="form-group">
+                <label for="new-business-state">State</label>
+                <input type="text" class="form-control new-business-state">
+              </div>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Add</button>
+          <span class="btn btn-default" id="add-address">Another address</span>
         </form>
 
         <h2>Contacts:</h2>
@@ -60,7 +79,9 @@
           <p>Address: </p>
           <ul id="addresses">
           </ul>
-
+          <p>Business Address: </p>
+          <ul id = "businessAddresses">
+          </ul>
         </div>
       </div>
 
