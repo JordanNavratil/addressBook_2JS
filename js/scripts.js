@@ -41,6 +41,13 @@ function resetFields() {
   $("input.new-business-state").val("");
 }
 
+// Hover not working
+// function showBusiness() {
+//   $("#new-business-addresses").hover(function(){
+//       $(".new-business-address").show();
+//   });
+// }
+
 $(document).ready(function() {
   $("#add-address").click(function() {
     $("#new-addresses").append('<div class = "new-address">' +
@@ -86,6 +93,9 @@ $(document).ready(function() {
       newContact.businessAddresses.push(newBusinessAddress);
     });
 
+    // $("#business-header").hover(function(){
+    //     $("form#new-business-addresses").show();
+    // });
 
     $("ul#contacts").append("<li><span class='contact'>" + newContact.fullName() + "</span></li>");
 
